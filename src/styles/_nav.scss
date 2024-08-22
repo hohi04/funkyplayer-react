@@ -1,0 +1,87 @@
+/* Define the root container styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Define the navigation bar styles */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 1rem 0;
+  background: rgba(#929292, 0.07); 
+  border: 1px solid rgba(#929292, 0.03); 
+  border-radius: 1em; 
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex: 1;
+
+  span {
+    margin: 10px;
+  }
+}
+
+.user-avatar {
+  margin: 0 1rem;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #929292;
+  transition: 0.8s ease;
+  animation: rotate 20s linear forwards normal;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pl-div {
+  flex: 1;
+
+  button {
+    background: transparent;
+    border: 2px solid rgb(65, 65, 65);
+    cursor: pointer;
+    padding: 0.8rem;
+    transition: all 0.3s ease; 
+  }
+  
+  button:hover {
+      background: rgb(65, 65, 65);
+      color: white;
+    }
+  
+    @media screen and (max-width: 768px) {
+      nav {
+        button {
+          z-index: 10;
+        }
+      }
+    }
+  }
+
+

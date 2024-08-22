@@ -1,0 +1,36 @@
+:root {
+  --percentage: 50%; /* Percentage for the progress bar */
+  --main-color: 255, 255, 255; /* Main color for white */
+  --el-bg-color: 4, 161, 155; /* Element background color */
+  
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy", sans-serif;
+}
+@import "./playlist";
+@import "./player";
+@import "./track";
+@import "./nav";
+@import "./volumecontrol";
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+h3,
+h4 {
+  font-weight: 600;
+}
+button {
+  font-weight: 700;
+}
+.player-app {
+  background-image: url("../../public/assets/zebra.jpg");
+  background-size: cover;
+  background-position: center;
+}
